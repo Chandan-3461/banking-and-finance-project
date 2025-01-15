@@ -1,9 +1,9 @@
-ipeline{
+pipeline{
     agent any
     stages{
         stage('checkout the code from github'){
             steps{
-                 git url: 'https://github.com/akshu20791/Banking-java-project/'
+                 git url: 'https://github.com/Chandan-3461/banking-and-finance-project'
                  echo 'github url checkout'
             }
         }
