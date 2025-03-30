@@ -1,34 +1,34 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: banking_app
+  name: banking-app
   labels:
-    app: bankfinance_lbl
+    app: bankfinance-lbl
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: bankfinance_lbl
+      app: bankfinance-lbl
   template:
     metadata:
       labels:
-        app: bankfinance_lbl
+        app: bankfinance-lbl
     spec:
       containers:
       - name: banking_container
-        image: chandan3461/banking_finance:latest
+        image: chandan3461/banking-finance:latest
         ports:
         - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
 metadata:
-  name: banking_service
+  name: banking-service
   labels:
-    app: bankfinance_lbl
+    app: bankfinance-lbl
 spec:
   selector:
-    app: bankfinance_lbl
+    app: bankfinance-lbl
   type: NodePort
   ports:
   - port: 8080
