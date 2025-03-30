@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: banking_container
-        image: chandan3461/banking-finance:latest
+        image: chandan3461/banking_finance:latest
         ports:
         - containerPort: 8080
 ---
