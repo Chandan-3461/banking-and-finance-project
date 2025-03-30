@@ -29,8 +29,7 @@ metadata:
 spec:
   selector:
     app: bankfinance-lbl
-  type: NodePort
+  type: LoadBalancer  # Change from NodePort to LoadBalancer
   ports:
   - port: 8080
     targetPort: 8080
-    nodePort: 31050
