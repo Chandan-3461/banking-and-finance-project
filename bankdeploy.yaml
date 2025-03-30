@@ -15,7 +15,7 @@ spec:
         app: bankfinance-lbl
     spec:
       containers:
-      - name: banking_container
+      - name: banking-container
         image: chandan3461/banking_finance:latest
         ports:
         - containerPort: 8080
